@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DepGraph — dependency &amp; maintainer risk explorer</title>
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="line-rail" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <span class="brand-mark">
+        <span class="dot dot-teal"></span><span class="dot dot-amber"></span><span class="dot dot-violet"></span>
+      </span>
+      <span class="brand-name">DepGraph</span>
+    </a>
+    <nav class="topnav">
+      <a href="#/" data-route="/">Explore</a>
+      <a href="#/risk" data-route="/risk">Service disruptions</a>
+      <a href="#/path" data-route="/path">Route finder</a>
+    </nav>
+    <div class="db-status" id="db-status" title="CognoDB connection status">
+      <span class="status-dot" id="status-dot"></span>
+      <span id="status-text">checking connection…</span>
+    </div>
+  </header>
+
+  <main id="app" class="app" aria-live="polite"></main>
+
+  <footer class="footer">
+    <span>DepGraph · a graph-database demo application backed by CognoDB</span>
+  </footer>
+
+  <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/render.js"></script>
+  <script src="/js/graph.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
