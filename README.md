@@ -165,7 +165,7 @@ concatenating a package name into a query string.
   find the shortest dependency chain between two named packages.
 
 
-## 9. Engineering notes
+## 7. Engineering notes
 
 - Connection details are read from environment variables only; `.env`
   is gitignored, and `.env.example` documents what's needed.
