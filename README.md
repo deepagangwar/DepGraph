@@ -164,19 +164,6 @@ concatenating a package name into a query string.
 - **`getShortestPath`** — uses Cypher's built-in `shortestPath()` to
   find the shortest dependency chain between two named packages.
 
-## 7. Screenshots
-
-_Add screenshots of the running app here before submitting — home
-page, a package detail view with the neighborhood graph, the risk
-dashboard, and the route finder._
-
-## 8. Hosted demo
-
-_Add your hosted demo URL and a short screen recording link here
-before submitting. Any free hosting tier that can run a Node.js
-process works (Render, Railway, Fly.io, etc.) — set the three
-`COGNODB_*` environment variables in the host's dashboard rather than
-committing `.env`._
 
 ## 9. Engineering notes
 
